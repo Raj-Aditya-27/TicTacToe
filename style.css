@@ -19,6 +19,26 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sound{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+#soundImage{
+    height: 6vh;
+    width: 90%;
+}
+
 li{
     list-style: none;
 }

@@ -90,3 +90,15 @@ button.addEventListener('click', () => {
     count = 0;
 })
 
+let sound =  document.getElementById("soundImage");
+sound.addEventListener('click',()=>{
+    console.log("clicked");
+    if(music.paused){
+        sound.src="no-sound.png";
+        music.play();
+    }
+    else{
+        sound.src="sound-on.png"
+        music.pause();
+    }
+})
