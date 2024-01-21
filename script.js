@@ -38,6 +38,8 @@ const checkWin = () => {
             boxes[Element[0]].style.color = 'red';
             boxes[Element[1]].style.color = 'red';
             boxes[Element[2]].style.color = 'red';
+
+            button.innerText="Play Again";
         }
 
         //check whether match is draw
@@ -45,6 +47,7 @@ const checkWin = () => {
             document.getElementsByClassName("turn")[0].innerText = "Match Draw";
             isgameover = true;
             gameover.play();
+            button.innerText="Play Again";
         }
     })
 };
@@ -74,6 +77,7 @@ let boxClick = Array.from(boxes).forEach(Element => {
 //Reset
 let button = document.querySelector("button");
 button.addEventListener('click', () => {
+    button.innerText="Reset";
     Array.from(boxes).forEach(Element => {
 
         let boxText = Element.querySelector(".boxText");
